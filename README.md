@@ -1,7 +1,7 @@
 ## [Yonoma](https://yonoma.io/) Node.js Email Marketing SDK
 ### Install
 ```bash
-npm install @yonoma/yonoma_email_marketing
+npm install yonoma_email_marketing
 ```
 ### Setup
 First, you need to get an API key:
