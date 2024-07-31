@@ -48,5 +48,3 @@ export class Yonoma {
         return (await response.json()) as any;
     }
 }
-
-export default Yonoma;

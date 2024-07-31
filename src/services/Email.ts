@@ -1,4 +1,4 @@
-import Yonoma from "./Yonoma";
+import { Yonoma } from "./Yonoma";
 import { EmailBody, EmailResponse } from "../types/email";
 import { ResourceEnums } from "../types/resource.enums";
 

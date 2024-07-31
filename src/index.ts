@@ -1,3 +1,1 @@
-import Yonoma from "./services/Yonoma";
-
-export default Yonoma;
+export { Yonoma } from "./services/Yonoma";

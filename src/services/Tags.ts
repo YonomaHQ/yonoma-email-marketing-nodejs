@@ -1,4 +1,4 @@
-import Yonoma from "./Yonoma";
+import { Yonoma } from "./Yonoma";
 import { ResourceEnums } from "../types/resource.enums";
 import {
     CreateTagOptions,

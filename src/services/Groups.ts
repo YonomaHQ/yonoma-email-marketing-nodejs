@@ -1,4 +1,4 @@
-import Yonoma from "./Yonoma";
+import { Yonoma } from "./Yonoma";
 import {
     CreateGroupOptions,
     CreateGroupResponse,

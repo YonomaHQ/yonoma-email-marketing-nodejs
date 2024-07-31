@@ -6,7 +6,10 @@ npm install @yonoma/yonoma_email_marketing
 ### Setup
 First, you need to get an API key:
 ```javascript
-import Yonoma from "@yonoma/yonoma_email_marketing";
+import { Yonoma } from "yonoma_email_marketing";
+
+// commonjs
+const { Yonoma } = require("yonoma_email_marketing");
 
 const yonoma = new Yonoma("YOUR_API_KEY");
 ```

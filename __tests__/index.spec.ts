@@ -1,4 +1,4 @@
-import Yonoma from "../src/index";
+import { Yonoma } from '../src/index';
 
 global.fetch = jest.fn();
 
