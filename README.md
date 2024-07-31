@@ -70,13 +70,13 @@ await yonoma.contacts.create("Group id", {
   status: "Subscribed" | "Unsubscribed",
   data: {
     fullName: string,
-    phone: number,
+    phone: string,
     gender: string,
     address: string,
     city: string,
     state: string,
     country: string,
-    zipcode: number,
+    zipcode: string,
   }
 });
 ```
