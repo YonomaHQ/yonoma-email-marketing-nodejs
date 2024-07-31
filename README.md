@@ -82,7 +82,7 @@ await yonoma.contacts.create("Group id", {
 ```
 #### Update contact
 ```javascript
-await yonoma.contacts.create("Group id", "Contact id", {
+await yonoma.contacts.update("Group id", "Contact id", {
   status: "Subscribed" | "Unsubscribed",
 });
 ```
