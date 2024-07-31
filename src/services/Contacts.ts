@@ -12,7 +12,7 @@ import { ResourceEnums } from "../types/resource.enums";
 export class Contacts {
     constructor(private readonly yonoma: Yonoma) {}
 
-    public async create(groupId: string, contactOptions: CreateContactOptions) {
+    create(groupId: string, contactOptions: CreateContactOptions) {
         const body = JSON.stringify(contactOptions);
 
         return this.yonoma.request(`/${ResourceEnums.CONTACTS}/${groupId}/create`, {
@@ -21,7 +21,7 @@ export class Contacts {
         });
     }
 
-    public async update(groupId: string, contactId: string, updateContact: UpdateContactOptions) {
+    update(groupId: string, contactId: string, updateContact: UpdateContactOptions) {
         const body = JSON.stringify(updateContact);
 
         return this.yonoma.request(`/${ResourceEnums.CONTACTS}/${groupId}/status/${contactId}`, {
