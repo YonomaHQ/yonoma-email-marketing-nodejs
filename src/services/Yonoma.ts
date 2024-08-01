@@ -40,11 +40,16 @@ export class Yonoma {
             headers,
         };
 
-        const response = await fetch(url, config);
-        if (!response.ok) {
-            const error = (await response.json()) as any;
-            return error;
+        try {
+            const response = await fetch(url, config);
+            if (!response.ok) {
+                const error = await response.text();
+                throw new Error(error);
+            }
+            return (await response.json()) as T;
+        } catch (error: any) {
+            const errorBody = JSON.parse(error.message as string);
+            return errorBody;
         }
-        return (await response.json()) as any;
     }
 }
