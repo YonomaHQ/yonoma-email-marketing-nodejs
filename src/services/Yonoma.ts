@@ -48,7 +48,7 @@ export class Yonoma {
             }
             return (await response.json()) as T;
         } catch (error: any) {
-            throw new Error(error.message)
+            throw new Error(error.message);
         }
     }
 }
