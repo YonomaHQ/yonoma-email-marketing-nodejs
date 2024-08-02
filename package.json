@@ -18,8 +18,23 @@
     "prebuild": "npm run lint && npm run test",
     "prerelease": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "yonoma",
+    "yonoma-api",
+    "email-api",
+    "email-sender",
+    "marketing-email",
+    "transactional-email"
+  ],
+  "homepage": "https://yonoma.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YonomaHQ/yonoma-email-marketing-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YonomaHQ/yonoma-email-marketing-nodejs/issues"
+  },
+  "author": "Yonoma",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.12",
