@@ -43,12 +43,12 @@ export class Yonoma {
         try {
             const response = await fetch(url, config);
             if (!response.ok) {
-                const error = await response.text();
-                throw new Error(error);
+                const error = await response.json();
+                throw error;
             }
             return (await response.json()) as T;
         } catch (error: any) {
-            throw new Error(error.message);
+            throw error;
         }
     }
 }
