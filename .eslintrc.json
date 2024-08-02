@@ -17,6 +17,7 @@
         "node": true
     },
     "rules": {
+        "no-useless-catch": "off",
         "indent": ["error", 4],
         "semi": ["error", "always"],
         "keyword-spacing": ["error", { "before": true, "after": true }],
