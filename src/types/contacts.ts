@@ -4,7 +4,8 @@ export type CreateContactOptions = {
     email: string;
     status: ContactStatus;
     data: {
-        fullName: string;
+        firstName: string;
+        lastName: string;
         phone: string;
         gender: string;
         address: string;
