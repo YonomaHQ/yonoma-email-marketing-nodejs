@@ -72,7 +72,8 @@ await yonoma.contacts.create("Group id", {
   email: "email@example.com",
   status: "Subscribed" | "Unsubscribed",
   data: {
-    fullName: string,
+    firstName: string,
+    lastName: string,
     phone: string,
     gender: string,
     address: string,
